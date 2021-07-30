@@ -19,6 +19,9 @@ p{
     padding-right: 15px;  
     position: relative;  
 }
+.container nav a{
+    font-size:20px ;
+}
 .container-fluid{
     width: 100%;
     padding-left: 15px;
@@ -77,13 +80,19 @@ header .container{
 
 
 header .container .logo {
-    width: 100px;
+    width: 150px;
+}
+header .container .logo:hover {
+    width: 160px;
 }
 header .container nav a{ 
    color: red;
    text-decoration: none;
    margin: 0 15px;
 }
+header .container nav a:hover{ 
+    color: black;    
+ }
 header .container .hamb{
     display: none;
 }
@@ -136,16 +145,28 @@ footer .redes a{
     border: none;
 }
 .boton.boton-rojo{
-
     color: white;
     background-color: red;
     font-size: 20px;
+    font-weight: bold;   
+}
+.boton.boton-rojo:hover{
+    color: red;
+    background-color: white;
+    font-size: 20px;
     font-weight: bold;
-   
+    border: 1px solid red;   
 }
 .boton.boton-blanco{
     color: red;
     background-color:white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid red;
+}
+.boton.boton-blanco:hover{
+    color: white;
+    background-color:red;
     font-size: 16px;
     font-weight: bold;
     border: 1px solid red;
@@ -322,6 +343,9 @@ footer .redes a{
             flex-direction: column;  
             transition: all 0.4s ease;
             transform: translateX(100%);          
+        }
+        header .container nav.open{
+            transform: translateX(0);
         }   
         header .container nav a{
             font-size:30px ;
@@ -331,6 +355,7 @@ footer .redes a{
             display: block;
             font-size: 40px;
             color: red;
+            position: relative;
         }
         form .boton.boton-negro{
             width: 100%;
